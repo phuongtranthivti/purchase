@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,6 +13,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/hello', function (){
+Route::get('hello', function (){
     return view('layouts.main');
 });
+Route::get('demo','AuthController@Demo');
+Route::get('login','DemoController@getList');
+//User
+
+
+//Store
+
+//Admin
